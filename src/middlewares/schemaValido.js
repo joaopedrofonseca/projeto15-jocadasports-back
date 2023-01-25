@@ -1,4 +1,4 @@
-export default function cadastroValido(schema){
+export default function schemaValido(schema){
     return (req,res,next) => {
         const {error} = schema.validate(req.body, {abortEarly: false})
         if (error){

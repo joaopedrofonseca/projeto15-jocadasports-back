@@ -1,6 +1,6 @@
 import Joi from "joi"
 
-const cadastroSchema = Joi.object({
+export const cadastroSchema = Joi.object({
     nome: Joi.string().required(),
     email: Joi.string().email().required(),
     senha: Joi.string().min(6).required(),
@@ -9,4 +9,7 @@ const cadastroSchema = Joi.object({
 })
 
 
-export default cadastroSchema
+export const loginSchema = Joi.object({
+    email: Joi.string().email().required(),
+    senha: Joi.string().required()
+})
