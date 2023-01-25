@@ -1,15 +1,15 @@
-import { MongoClient, MongoClient } from "mongodb"
+import { MongoClient } from "mongodb"
 import dotenv from "dotenv"
 
 dotenv.config()
 
-const MongoClient = new MongoClient(process.env.DATABASE_URL)
+const mongoClient = new MongoClient(process.env.DATABASE_URL)
 let db
 
-try{
-    await MongoClient.connect()
+try {
+    await mongoClient.connect()
     db = mongoClient.db()
-} catch(err){
+} catch (error) {
     console.log("Erro ao conectar servidor com Banco de Dados")
 }
 
