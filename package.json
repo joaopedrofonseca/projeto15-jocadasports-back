@@ -1,7 +1,6 @@
 {
   "name": "projeto15-jocadasports-back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -19,5 +18,15 @@
     "joi": "^17.7.0",
     "mongodb": "^4.13.0",
     "nodemon": "^2.0.20",
-    "uuid": "^9.0.0"  }
+    "uuid": "^9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopedrofonseca/projeto15-jocadasports-back.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joaopedrofonseca/projeto15-jocadasports-back/issues"
+  },
+  "homepage": "https://github.com/joaopedrofonseca/projeto15-jocadasports-back#readme",
+  "description": ""
 }
