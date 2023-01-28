@@ -14,5 +14,5 @@ server.use([authRouter, productsRouter, cartRouter])
 
 
 server.listen(process.env.PORT, () => {
-    console.log("Servidor: http://localhost:5000")
+    console.log("Servidor: " + process.env.PORT)
 })
